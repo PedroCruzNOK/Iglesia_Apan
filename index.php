@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Titulo de la página</title>
-</head>
-<body>
+<?php $title = "Iglesia Apan" ?>
+<?php include("parciales/header.php") ?>
   <header>
     <a href="login.php">Administrar</a>
     <h1>Titulo principal de esta página</h1>
@@ -25,8 +20,5 @@
   <section>
     Sección del Mapa
   </section>
-  <footer>
-    Información secundaria del sitio
-  </footer>
 </body>
 </html>
