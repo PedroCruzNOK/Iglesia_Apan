@@ -5,6 +5,10 @@ h1{
   font-size: 60px;
 
 }
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;font-weight: 200;
+}
 .conteTitulo{
   margin-top: 2em;
   margin-bottom: 0.5em;
