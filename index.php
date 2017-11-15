@@ -1,3 +1,4 @@
+<?php $title="Parroquia apan"; ?>
 <?php include("parciales/header.php"); ?>
 
       <section class="slider">

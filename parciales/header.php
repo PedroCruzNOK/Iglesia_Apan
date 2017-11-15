@@ -1,25 +1,35 @@
+<?php
+  session_start();
+
+  if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+    $admin = true;
+  }
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Parroquia APAN</title>
+    <title><?php echo ($title ? $title : "Sin titulo") ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:200i|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
   </head>
   <body>
     <header>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-10 conteTitulo">
+          <div class="col-sm-2 offset-sm-10">
+            <br>
+            <?php if($admin){?>
+              <a href="logout.php" class="btn btn-primary btn-sm"><?php echo $_SESSION['username'] ?> - Salir</a>
+            <?php }else{ ?>
+              <a href="login.php" class="btn btn-secondary btn-sm">Ingresar</a>
+            <?php } ?>
+          </div>
+          <div class="col-md-12 conteTitulo">
             <h1 class="titulo text-center">Parroquia APAN Hidalgo</h1>
           </div>
-          <div class="col-sm-2">
-            <br>
-            <button class="btn">ingresar</button>
-          </div>
-
         </div>
         <div class="row ">
           <div class="col-sm-12 col-md-8 offset-md-2">
