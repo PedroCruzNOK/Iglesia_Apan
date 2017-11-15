@@ -1,0 +1,28 @@
+
+h1{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+
+}
+.conteTitulo{
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+.menu{
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  color: #A6937C;
+
+}
+.menu:hover{
+
+  color: #fff;
+  background-color: black;
+}
+.slide{
+  height: 600px;
+
+}

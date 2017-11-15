@@ -37,8 +37,7 @@
             <br><br>
             <h1>Bienvenido <strong><?php echo $_SESSION['username'] ?></strong></h1>
             <p>Tu sesión es: <?php echo session_id(); ?></p>
-            <p><?php var_dump($_SESSION." ".$_COOKIE); ?></p>
-            <a href="index.php" class="btn btn-primary btn-large">Continuar</a>
+            <a href="index.php" class="btn btn-primary btn-lg">Continuar</a>
           </div>
         </div>
       </div>
