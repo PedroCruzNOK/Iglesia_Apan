@@ -1,4 +1,7 @@
-<?php include("parciales/header.php"); ?>
+<?php
+  $title = "Iglesia Apan";
+  include("parciales/header.php");
+?>
 
       <section class="slider">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
