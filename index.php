@@ -1,5 +1,20 @@
-<?php $title = "Iglesia Apan" ?>
-<?php include("parciales/header.php") ?>
+<?php
+  session_start();
+
+  if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+  ?>
+    <p>
+      Eres <strong><?php echo $_SESSION['username'] ?></strong> - 
+      <a href="logout.php">salir</a>
+    </p>
+  <?php
+  } 
+?>
+
+<?php 
+  $title = "Iglesia Apan";
+  include("parciales/header.php");
+?>
   <header>
     <a href="login.php">Administrar</a>
     <h1>Titulo principal de esta página</h1>
@@ -20,5 +35,4 @@
   <section>
     Sección del Mapa
   </section>
-</body>
-</html>
+<?php include('parciales/footer.php') ?>

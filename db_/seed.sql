@@ -1,0 +1,1 @@
+INSERT INTO usuarios (usuario, password) VALUES ('admin', md5('admin'));
