@@ -17,29 +17,30 @@
   </head>
   <body>
     <header>
-      <div class="container-fluid">
+      <div class="">
         <div class="row">
-          <div class="col-sm-2 offset-sm-10">
+          <div class="col-sm-12 col-md-10 conteTitulo">
+            <h1 class="titulo text-center">PARROQUIA SAGRADO CORAZON DE JESUS</h1>
+          </div>
+          <div class="col-sm-2">
             <br>
             <?php if($admin){?>
-              <a href="logout.php" class="btn btn-primary btn-sm"><?php echo $_SESSION['username'] ?> - Salir</a>
+              <a href="logout.php" class="btn btn1 btn-primary btn-sm"><?php echo $_SESSION['username'] ?> - Salir</a>
             <?php }else{ ?>
-              <a href="login.php" class="btn btn-secondary btn-sm">Ingresar</a>
+              <a href="login.php" class="btn btn1 btn-secondary btn-sm">Ingresar</a>
             <?php } ?>
           </div>
-          <div class="col-md-12 conteTitulo">
-            <h1 class="titulo text-center">Parroquia APAN Hidalgo</h1>
-          </div>
+
         </div>
         <div class="row ">
-          <div class="col-sm-12 col-md-8 offset-md-2">
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #353734;">
+          <div class="col-sm-12">
+            <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #261C14;">
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon"></span>
                </button>
 
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                 <ul class="navbar-nav mr-auto">
+                 <ul class="navbar-nav mr-auto text-center ml-auto">
                    <li class="nav-item active">
                      <a class="btn menu" href="page_historia.php">HISTORIA <span class="sr-only">(current)</span></a>
                    </li>
@@ -57,6 +58,10 @@
                    </li>
 
                  </ul>
+                 <div class="redes_sociales d-flex flex-row justify-content-center">
+                  <a href="#"class="btn btn-outline-primary mr-2">F</a>
+                  <a href="#"class="btn btn-outline-danger">Y</a>
+                 </div>
                </div>
             </nav>
           </div>

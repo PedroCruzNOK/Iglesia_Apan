@@ -1,13 +1,16 @@
 
 h1{
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  font-weight: 200;
+
 
 }
 h2{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 28px;font-weight: 200;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: #353734;
 }
 .conteTitulo{
   margin-top: 2em;
@@ -15,14 +18,31 @@ h2{
 }
 .menu{
 
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
-  font-weight: 200;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+
   color: #A6937C;
 
 }
 .menu:hover{
 
-  color: #fff;
-  background-color: black;
+  color: #E3F2FD;
+  background-color: #735645;
+}
+.titulo-slider{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 58px;
+  font-weight: 200;
+  color: #261C14;
+}
+.btn1{
+  background: #261C14;
+  color: #A6937C;
+  font-size: 18px;
+  border: none;
+}
+.btn1:hover{
+  background: #735645;
+  color: #E3F2FD;
 }

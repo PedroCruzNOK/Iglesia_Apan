@@ -21,7 +21,7 @@
                <div class="checkbox">
                  <label><input type="checkbox"> Recordarme</label>
                </div>
-               <button type="submit" class="btn btn-default">Enviar</button>
+               <button type="submit" class="btn btn1 btn-default">Enviar</button>
              </form>
           </div>
         </div>
