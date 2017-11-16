@@ -45,11 +45,9 @@
                      <a class="btn menu" href="page_historia.php">HISTORIA <span class="sr-only">(current)</span></a>
                    </li>
                    <li class="nav-item active">
-                     <a class="btn menu" href="page_tramites.php">TRAMITES <span class="sr-only">(current)</span><span class="sr-only">(current)</span></a>
+                     <a class="btn menu" href="page_tramites.php">TRAMITES e INFORMACION <span class="sr-only">(current)</span><span class="sr-only">(current)</span></a>
                    </li>
-                   <li class="nav-item active">
-                     <a class="btn  menu" href="page_informacion.php">INFORMACION <span class="sr-only">(current)</span></a>
-                   </li>
+
                    <li class="nav-item active">
                      <a class="btn  menu" href="page_quienes_somos.php">QUIENES SOMOS<span class="sr-only">(current)</span></a>
                    </li>

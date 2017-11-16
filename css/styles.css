@@ -10,7 +10,7 @@ h2{
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 28px;
-  color: #353734;
+  color: #A6937C;
 }
 .conteTitulo{
   margin-top: 2em;
@@ -45,4 +45,22 @@ h2{
 .btn1:hover{
   background: #735645;
   color: #E3F2FD;
+}
+.pie-pagina{
+  background: #353734;
+}
+.formulario-contacto{
+  background: #735645;
+  padding: 1.5em;
+  border-radius: 5px;
+}
+.card1{
+
+  border: 2px solid #735645;
+  border-top-left-radius: 30px;
+}
+.card2{
+
+  border: 2px solid #353734;
+  border-bottom-left-radius: 30px;
 }
