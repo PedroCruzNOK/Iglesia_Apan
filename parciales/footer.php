@@ -17,8 +17,8 @@
                  <input type="email" class="form-control" id="email" placeholder="Enter email">
                </div>
                <div class="form-group">
-                 <label for="pwd">Password:</label>
-                 <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                 <label for="pwd">Mensaje:</label>
+                 <input type="email" class="form-control" id="pwd" placeholder="Enter Message">
                </div>
                <div class="checkbox">
                  <label><input type="checkbox"> Recordarme</label>
@@ -27,13 +27,14 @@
              </form>
           </div>
         </div>
+      </div>
         <br>
-        <div class="row">
+        <div class="row about">
           <div class="col-md-12">
             <h6 class="text-center">desarrollado por  @jefes.com </h6>
           </div>
         </div>
-      </div>
+
 
     </footer>
 

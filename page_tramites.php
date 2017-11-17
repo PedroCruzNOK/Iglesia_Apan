@@ -1,6 +1,8 @@
 <?php $title = 'Tramites - Parroquia Apan' ?>
 <?php include('parciales/header.php') ?>
 <section class="servicios">
+  <br>
+  <h2 class="text-center">TRAMITES Y SERVICIOS</h2>
   <?php if($admin){ ?>
     <div class="row">
       <div class="col col-lg-12 text-center">
@@ -18,13 +20,13 @@
 
   <div id="servicesContainer" class="row">
 
-    <?php 
+    <?php
       include('crud/services_read.php');
 
       foreach ($servicios as $key => $value) {
     ?>
 
-      <div class="col col-lg-4 col-md-6 card-container">  
+      <div class="col col-lg-4 col-md-6 card-container">
         <div class="card" id="<?php echo $value['servicio_id']; ?>">
           <div class="card-body">
             <h4 class="card-title"><?php echo $value['nombre']; ?></h4>
@@ -32,7 +34,7 @@
             <p class="card-text"><?php echo $value['descripcion']; ?></p>
             <a href="#" class="card-link">Mas información</a>
             <?php if($admin){ ?>
-              <div class="btn-group float-right" role="group" aria-label="Basic example"> 
+              <div class="btn-group float-right" role="group" aria-label="Basic example">
                 <button data-toggle="modal" data-target="#editServiceModal" class="card-link btn btn-warning edit_service_button"><strong>x</strong> Editar</button>
                 <button class="card-link btn btn-danger delete_service_button"><strong>x</strong> Eliminiar</button>
               </div>

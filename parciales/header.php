@@ -21,16 +21,16 @@
     <header>
       <div class="">
         <div class="row">
-          <div class="col col-sm-12 no-gutters">
+          <div class="col col-sm-12">
             <?php if($admin){?>
               <div class="login-info align-middle">
                 <span class="align-middle">
                   <strong>Puedes amdinistrar!</strong> Recuerda salir de tu sesión antes de irte.
                 </span>
-                <a href="logout.php" class="btn btn-info btn-sm float-right">Cerrar Sesión</a>
+                <a href="logout.php" class="btn btn-info btn-sm float-right btn1">Cerrar Sesión</a>
               </div>
             <?php }else{ ?>
-              <a href="login.php" class="btn btn-outline-secondary btn-sm float-right">Ingresar</a>
+              <a href="login.php" class="btn btn-outline-secondary btn-sm float-right btn1">Ingresar</a>
             <?php } ?>
           </div>
           <div class="col-sm-12 col-md-12 conteTitulo">
@@ -38,7 +38,7 @@
           </div>
 
         </div>
-        
+
         <div class="row ">
           <div class="col-sm-12">
             <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #261C14;">
