@@ -12,9 +12,24 @@ h2{
   font-size: 28px;
   color: #A6937C;
 }
+
+section.servicios{
+  padding: 2.5em 1em;
+}
+
 .conteTitulo{
   margin-top: 2em;
   margin-bottom: 0.5em;
+}
+
+.col.no-gutters{
+  padding: 0;
+}
+
+.login-info {
+  background-color: #AEE6FA;
+  overflow: hidden;
+  padding: .2em 1.5em;
 }
 .menu{
 
@@ -63,4 +78,8 @@ h2{
 
   border: 2px solid #353734;
   border-bottom-left-radius: 30px;
+}
+
+.servicios .card{
+  margin-bottom: 2em;
 }

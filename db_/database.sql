@@ -9,4 +9,12 @@ CREATE TABLE usuarios (
   password VARCHAR(32) NOT NULL
 ); 
 
+CREATE TABLE servicios (
+  servicio_id INT(4) KEY NOT NULL AUTO_INCREMENT,
+  nombre VARCHAR(50) NOT NULL,
+  descripcion TEXT,
+  costo INT(5)
+);
+
 CREATE INDEX index_usuario_id ON usuarios(usuario_id);
+CREATE INDEX index_servicio_id ON servicios(servicio_id);
