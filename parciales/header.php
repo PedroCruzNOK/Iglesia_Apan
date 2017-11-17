@@ -3,13 +3,15 @@
 
   if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     $admin = true;
+  } else{
+    $admin = false;
   }
 ?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title><?php echo ($title ? $title : "Sin titulo") ?></title>
+    <title><?php echo ($title ? $title : "Parroquia Apan"); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:200i|Open+Sans" rel="stylesheet">
@@ -19,19 +21,24 @@
     <header>
       <div class="">
         <div class="row">
-          <div class="col-sm-12 col-md-10 conteTitulo">
-            <h1 class="titulo text-center">PARROQUIA SAGRADO CORAZON DE JESUS</h1>
-          </div>
-          <div class="col-sm-2">
-            <br>
+          <div class="col col-sm-12 no-gutters">
             <?php if($admin){?>
-              <a href="logout.php" class="btn btn1 btn-primary btn-sm"><?php echo $_SESSION['username'] ?> - Salir</a>
+              <div class="login-info align-middle">
+                <span class="align-middle">
+                  <strong>Puedes amdinistrar!</strong> Recuerda salir de tu sesión antes de irte.
+                </span>
+                <a href="logout.php" class="btn btn-info btn-sm float-right">Cerrar Sesión</a>
+              </div>
             <?php }else{ ?>
-              <a href="login.php" class="btn btn1 btn-secondary btn-sm">Ingresar</a>
+              <a href="login.php" class="btn btn-outline-secondary btn-sm float-right">Ingresar</a>
             <?php } ?>
+          </div>
+          <div class="col-sm-12 col-md-12 conteTitulo">
+            <h1 class="titulo text-center">PARROQUIA SAGRADO CORAZON DE JESUS</h1>
           </div>
 
         </div>
+        
         <div class="row ">
           <div class="col-sm-12">
             <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #261C14;">
