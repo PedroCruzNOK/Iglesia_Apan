@@ -26,6 +26,7 @@
     // if (password_verify($password, $row['password'])) { 
     if (md5($password) == $row['password']) {
       $_SESSION['loggedin'] = true;
+      $_SESSION['user_id'] = $row['usuario_id'];
       $_SESSION['username'] = $username;
       // $_SESSION['start'] = time();
       // $_SESSION['expire'] = $_POSTSESSION['start'] + (5 * 60);
