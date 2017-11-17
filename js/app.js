@@ -66,8 +66,6 @@ $(document).ready(function(){
     var descripcion = $('#eSeDescripcion').val();
     var costo = $('#eSeCosto').val();
 
-    console.log(card);
-
     $.ajax({
       type: 'POST',
       url: 'crud/services_update.php',
@@ -113,6 +111,43 @@ $(document).ready(function(){
         }
       });
     }
-
   });
+
+  // Usuarios - Crear
+  $('#createUserButton').click(function(){
+    var user = $('#usuarios_usuario').val();
+    var pass = $('#usuarios_password').val();
+
+    console.log(user);
+    console.log(pass);
+
+    $.ajax({
+      type: 'POST',
+      url: '/crud/users_create.php',
+      data: {
+        "user": user,
+        "pass": pass
+      },
+      success: function(data){
+        if(!data.error){
+          alert(data.message)
+        }
+
+        $('table tbody').append('\
+          <tr>\
+              <td>' + user + '</td>\
+              <td class="text-right">\
+                <div class="btn-group" role="group" aria-label="Basic example">\
+                  <button type="button" class="btn btn-sm btn-secondary">Editar</button>\
+                  <button type="button" class="btn btn-sm btn-danger">Eliminar</button>\
+                </div>\
+              </td>\
+            </tr>\
+          ');
+        $('#addUserModal input').val('');
+      }
+    })
+  });
+
+
 });

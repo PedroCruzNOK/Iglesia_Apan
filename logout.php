@@ -9,7 +9,7 @@
     <div class="column col-sm-12 text-center">
       <br><br>
       <h1>Tu sesión se cerró correctamente</h1>
-      <a href="index.php" class="btn btn-primary btn-large">Inicio</a>
+      <a href="/" class="btn btn-primary btn-large">Inicio</a>
     </div>
   </div>
 </div>
