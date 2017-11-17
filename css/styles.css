@@ -9,9 +9,24 @@ h2{
   font-family: 'Montserrat', sans-serif;
   font-size: 28px;font-weight: 200;
 }
+
+section.servicios{
+  padding: 2.5em 1em;
+}
+
 .conteTitulo{
   margin-top: 2em;
   margin-bottom: 0.5em;
+}
+
+.col.no-gutters{
+  padding: 0;
+}
+
+.login-info {
+  background-color: #AEE6FA;
+  overflow: hidden;
+  padding: .2em 1.5em;
 }
 .menu{
 
@@ -25,4 +40,8 @@ h2{
 
   color: #fff;
   background-color: black;
+}
+
+.servicios .card{
+  margin-bottom: 2em;
 }
