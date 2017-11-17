@@ -66,8 +66,6 @@ $(document).ready(function(){
     var descripcion = $('#eSeDescripcion').val();
     var costo = $('#eSeCosto').val();
 
-    console.log(card);
-
     $.ajax({
       type: 'POST',
       url: 'crud/services_update.php',
@@ -113,6 +111,97 @@ $(document).ready(function(){
         }
       });
     }
+  });
+
+  // Usuarios - Crear
+  $('#createUserButton').click(function(){
+    var user = $('#usuarios_usuario').val();
+    var pass = $('#usuarios_password').val();
+
+    console.log(user);
+    console.log(pass);
+
+    $.ajax({
+      type: 'POST',
+      url: '/crud/users_create.php',
+      data: {
+        "user": user,
+        "pass": pass
+      },
+      success: function(data){
+        if(!data.error){
+          alert(data.message)
+        }
+
+        $('table tbody').append('\
+          <tr>\
+              <td>' + user + '</td>\
+              <td class="text-right">\
+                <div class="btn-group" role="group" aria-label="Basic example">\
+                  <button type="button" class="btn btn-sm btn-secondary">Editar</button>\
+                  <button type="button" class="btn btn-sm btn-danger">Eliminar</button>\
+                </div>\
+              </td>\
+            </tr>\
+          ');
+        $('#addUserModal input').val('');
+      }
+    })
+  });
+
+  $('.edit_user_button').click(function(){
+    var item = $(this).closest('tr');
+    var id = $(item).attr('id');
+    var current_user = $(item).find('.username').text();
+    $('#edit_usuario_id').val(id);
+    $('#edit_usuarios_usuario').val(current_user);
+  });
+
+  $('#updateUserButton').click(function(){
+    var id = $('#edit_usuario_id').val()
+    var user = $('#edit_usuarios_usuario').val();
+    var pass = $('#edit_usuarios_password').val();
+    // if (!pass) {
+    //   var pass = '';
+    // }
+
+    console.log(id);
+    $.ajax({
+      type: 'POST',
+      url: '/crud/users_update.php',
+      data: {
+        "id": id,
+        "user": user,
+        "pass": pass
+      },
+      success: function(data){
+        alert(data.message);
+        if(!data.error){
+          // Actualizamos con la nueva información
+          $("#"+id).find('.username').text(user);
+        }
+      }
+    });
 
   });
+
+  $('.delete_user_button').click(function(){
+    var item = $(this).closest('tr');
+    var id = $(this).closest('tr').attr('id');
+
+    $.ajax({
+      type: 'POST',
+      url: '/crud/users_delete.php',
+      data: {
+        "id": id
+      },
+      success: function(data){
+        alert(data.message);
+        if(!data.error){
+          $(item).remove();
+        }
+      }
+    })
+  });
+
 });
