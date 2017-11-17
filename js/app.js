@@ -160,10 +160,10 @@ $(document).ready(function(){
         "id": id
       },
       success: function(data){
+        alert(data.message);
         if(!data.error){
-          alert(data.message);
+          $(item).remove();
         }
-        $(item).remove();
       }
     })
   });
