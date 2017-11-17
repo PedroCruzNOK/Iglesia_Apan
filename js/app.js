@@ -149,5 +149,23 @@ $(document).ready(function(){
     })
   });
 
+  $('.delete_user_button').click(function(){
+    var item = $(this).closest('tr');
+    var id = $(this).closest('tr').attr('id');
+
+    $.ajax({
+      type: 'POST',
+      url: '/crud/users_delete.php',
+      data: {
+        "id": id
+      },
+      success: function(data){
+        if(!data.error){
+          alert(data.message);
+        }
+        $(item).remove();
+      }
+    })
+  });
 
 });

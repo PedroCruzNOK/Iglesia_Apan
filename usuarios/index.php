@@ -1,3 +1,4 @@
+<?php $title = 'Usuarios - Parroquia Apan' ?>
 <?php include('../parciales/header.php') ?>
 <?php
 if(!$admin){
@@ -21,12 +22,12 @@ if(!$admin){
         <tbody>
           <?php include('../crud/users_read.php'); ?>
           <?php foreach ($usuarios as $key => $usuario) { ?>
-            <tr>
+            <tr id="<?php echo $usuario['usuario_id'] ?>">
               <td><?php echo $usuario['usuario'] ?></td>
               <td class="text-right">
                 <div class="btn-group" role="group" aria-label="Basic example">
                   <button type="button" class="btn btn-sm btn-secondary">Editar</button>
-                  <button type="button" class="btn btn-sm btn-danger">Eliminar</button>
+                  <button type="button" class="btn btn-sm btn-danger delete_user_button">Eliminar</button>
                 </div>
               </td>
             </tr>
