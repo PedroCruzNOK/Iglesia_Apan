@@ -13,9 +13,9 @@
     <meta charset="utf-8">
     <title><?php echo ($title ? $title : "Parroquia Apan"); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:200i|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+    <link rel="stylesheet" href="/css/styles.css" media="screen" title="no title">
   </head>
   <body>
     <header>
@@ -27,7 +27,10 @@
                 <span class="align-middle">
                   <strong>Puedes amdinistrar!</strong> Recuerda salir de tu sesión antes de irte.
                 </span>
-                <a href="logout.php" class="btn btn-info btn-sm float-right btn1">Cerrar Sesión</a>
+                <div class="btn-group float-right" role="group" aria-label="Basic example">
+                  <a href="/usuarios/" class="btn btn-sm btn-secondary">Usuarios</a>
+                  <a href="/logout.php" class="btn btn-info btn-sm">Cerrar Sesión</a>
+                </div>
               </div>
             <?php }else{ ?>
               <a href="login.php" class="btn btn-outline-secondary btn-sm float-right btn1">Ingresar</a>
