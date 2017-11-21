@@ -12,7 +12,12 @@ h2{
   font-size: 28px;
   color: #A6937C;
 }
-
+h4{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  font-weight: 200;
+  color: #E3F2FD;
+}
 section.servicios{
   padding: 2.5em 1em;
 }
@@ -116,4 +121,34 @@ p{
   color: #E3F2FD;
   padding: 0.5em;
   vertical-align: bottom;
+}
+.formulario{
+  width: 100%;
+  margin: auto;
+  background: rgba(166, 147, 124, 0.6);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+.tituloFormulario{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.inputFormulario{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: none;
+}
+.textFormulario{
+  min-height: 50px;
+  max-height: 200px;
+  max-width: 100%;
 }
