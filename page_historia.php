@@ -1,8 +1,12 @@
 <?php include("parciales/header.php"); ?>
+<?php include("crud/histories_read.php") ?>
+
 <br>
 <section class="historias">
   <h2 class="text-center">HISTORIAS</h2>
   <br>
+
+  <!-- Mostramos el mensaje de exito o error segun los parametros -->
   <?php if(isset($_GET['success'])){ ?>
     <div class="alert alert-success text-center" role="alert">
       <?php echo $_GET['success'] ?>
@@ -19,32 +23,35 @@
       </button>
     </div>
   <?php } ?>
-  <div class="container">
 
+  <div class="container">
+    
+    <?php if($admin) { ?>
+      <div class="col col-sm-12 text-right">
+        <a href="/historias/nueva.php" class="btn btn-success"><strong>+</strong> Nueva Historia</a>
+        <br><br>
+      </div>
+    <?php } ?>
+
+    <?php foreach ($historias as $key => $history) { ?>
       <div class="row">
 
-        <?php if($admin) { ?>
-          <div class="col col-sm-12 text-right">
-            <a href="/historias/nueva.php" class="btn btn-success"><strong>+</strong> Nueva Historia</a>
-            <br><br>
-          </div>
-        <?php } ?>
 
         <div class="col-sm-4">
-          <img src="images/captura2.JPG" alt="..." class="img-thumbnail">
+          <img src="<?php if(empty($history['imagen_url'])){ echo 'images/captura2.JPG'; }else{ echo $history['imagen_url']; } ?> " alt="..." class="img-thumbnail">
         </div>
         <div class="col-sm-8">
           <div class="card">
             <div class="card-header">
               <strong>
-                Quote
+                <?php echo $history['titulo'] ?>
               </strong>
             </div>
             <div class="card-body">
               <blockquote class="blockquote mb-0">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <p><?php echo $history['contenido'] ?></p>
                 <footer class="blockquote-footer">
-                  18 Diciembre 2017
+                  <?php echo $history['fecha'] ?>
                   <a href="#" class="float-right">Ver completo</a>
                 </footer>
               </blockquote>
@@ -65,6 +72,7 @@
       </div>
 
       <hr>
+    <?php } ?>
 
   </div>
 </section>
