@@ -11,11 +11,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title><?php echo ($title ? $title : "Parroquia Apan"); ?></title>
+    <!-- Insertamos el titulo, se da valor por default si no se definio antes -->
+    <title><?php echo (isset($title) ? $title : "Parroquia Apan"); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:200i|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css" media="screen" title="no title">
+    <script src="/js/tinymce/tinymce.min.js"></script>
   </head>
   <body>
     <header>
@@ -52,20 +54,20 @@
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                  <ul class="navbar-nav mr-auto text-center ml-auto">
                    <li class="nav-item">
-                     <a class="btn menu" href="index.php">INICIO <span class="sr-only">(current)</span></a>
+                     <a class="btn menu" href="/index.php">INICIO <span class="sr-only">(current)</span></a>
                    </li>
                    <li class="nav-item active">
-                     <a class="btn menu" href="page_historia.php">HISTORIA <span class="sr-only">(current)</span></a>
+                     <a class="btn menu" href="/page_historia.php">HISTORIA <span class="sr-only">(current)</span></a>
                    </li>
                    <li class="nav-item active">
-                     <a class="btn menu" href="page_tramites.php">TRAMITES e INFORMACION <span class="sr-only">(current)</span><span class="sr-only">(current)</span></a>
+                     <a class="btn menu" href="/page_tramites.php">TRAMITES e INFORMACION <span class="sr-only">(current)</span><span class="sr-only">(current)</span></a>
                    </li>
 
                    <li class="nav-item active">
-                     <a class="btn  menu" href="page_quienes_somos.php">QUIENES SOMOS<span class="sr-only">(current)</span></a>
+                     <a class="btn  menu" href="/page_quienes_somos.php">QUIENES SOMOS<span class="sr-only">(current)</span></a>
                    </li>
                    <li class="nav-item active">
-                     <a class="btn  menu" href="page_acerca_de.php">ACERCA DE <span class="sr-only">(current)</span></a>
+                     <a class="btn  menu" href="/page_acerca_de.php">ACERCA DE <span class="sr-only">(current)</span></a>
                    </li>
 
                  </ul>
