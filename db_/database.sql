@@ -31,6 +31,7 @@ CREATE TABLE reservaciones(
   nombre VARCHAR(50) NOT NULL,
   telefono VARCHAR(15) NOT NULL,
   email VARCHAR(50),
+  fecha DATE,
   servicio_id INT(4),
   FOREIGN KEY(servicio_id) REFERENCES servicios(servicio_id)
 );

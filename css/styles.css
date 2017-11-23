@@ -31,6 +31,10 @@ section.servicios{
   padding: 0;
 }
 
+.datepicker{
+  z-index: 999;
+}
+
 .login-info {
   background-color: #AEE6FA;
   overflow: hidden;
