@@ -62,7 +62,7 @@
                 
                 <div class="btn-group float-right">
                   <a href="/historias/editar.php?id=<?php echo $history['historia_id'] ?>"class="btn btn-warning">Editar</a>
-                  <a href="#" class="btn btn-danger">Eliminar</a>
+                  <a href="/crud/histories_delete.php?id=<?php echo $history['historia_id'] ?>" class="btn btn-danger">Eliminar</a>
                 </div>
               </div>
             <?php } ?>
