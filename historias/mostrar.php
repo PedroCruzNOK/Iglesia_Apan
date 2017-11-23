@@ -4,16 +4,19 @@
 
 <div class="container">
   <br>
-  <div class="row">
-    <div class="col col-lg-12 text-center">
-      <img src="<?php echo $historias[0]['imagen_url'] ?>" style="height: 320px; width: auto;"> 
-    </div>
+  <div class="row detalle-historia">
     <div class="col-lg-12">
       <h2 class="text-center"><?php echo $historias[0]['titulo'] ?></h2>
     </div>
-    <div class="col-lg-12">
+    <br>
+    <div class="col-lg-8">
       <?php echo $historias[0]['contenido'] ?>
     </div>
+    <div class="col col-lg-4 text-center">
+      <img src="<?php echo $historias[0]['imagen_url'] ?>" style="height: auto; width:100%;">
+    </div>
+
+
   </div>
 </div>
 

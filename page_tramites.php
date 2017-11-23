@@ -1,6 +1,6 @@
 <?php $title = 'Tramites - Parroquia Apan' ?>
 <?php include('parciales/header.php') ?>
-<section class="servicios">
+<section class="servicioss">
   <br>
   <h2 class="text-center">TRAMITES Y SERVICIOS</h2>
   <?php if($admin){ ?>
@@ -26,8 +26,8 @@
       foreach ($servicios as $key => $value) {
     ?>
 
-      <div class="col col-lg-4 col-md-6 card-container">
-        <div class="card" id="<?php echo $value['servicio_id']; ?>">
+      <div class="col col-lg-4 col-md-6 card-container ">
+        <div class="card desc-tramite" id="<?php echo $value['servicio_id']; ?>">
           <div class="card-body">
             <h4 class="card-title"><?php echo $value['nombre']; ?></h4>
             <h6 class="card-subtitle mb-2 text-muted">$<?php echo $value['costo']; ?></h6>
