@@ -39,7 +39,7 @@
                 <button class="card-link btn btn-danger delete_service_button"><strong>x</strong> Eliminiar</button>
               </div>
             <?php } ?>
-            <a href="#" class="card-link btn btn-primary float-right">Reservar</a>
+            <a href="/servicios/reservar.php?id=<?php echo $value['servicio_id'] ?>" class="card-link btn btn-primary float-right">Reservar</a>
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@
           </div>
           <div class="form-group">
             <label for="descripcion">Descripcion</label>
-            <textarea type="textarea" name="descripcion" id="descripcion" class="form-control"></textarea>
+            <textarea type="textarea" name="descripcion" id="descripcion" class="form-control edit-textarea"></textarea>
           </div>
           <div class="form-group">
             <label for="costo">Costo</label>
@@ -116,7 +116,7 @@
           </div>
           <div class="form-group">
             <label for="descripcion">Descripción</label>
-            <textarea type="textarea" name="descripcion" id="eSeDescripcion" class="form-control"></textarea>
+            <textarea type="textarea" name="descripcion" id="eSeDescripcion" class="form-control edit-textarea"></textarea>
           </div>
           <div class="form-group">
             <label for="costo">Costo</label>

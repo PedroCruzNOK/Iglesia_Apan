@@ -15,6 +15,10 @@ $(document).ready(function(){
   toolbar: 'insert | undo redo |  formatselect | bold italic backcolor  | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help'
   });
 
+  // Inicializacion para el datepicker e jquery-ui
+  $('.datepicker').datepicker();
+
+
 
   $('#add_service_button').click(function(){
 
