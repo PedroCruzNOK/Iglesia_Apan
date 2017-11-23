@@ -52,7 +52,7 @@
                 <p><?php echo substr((strip_tags($history['contenido'])), 0, 120).' ...'; ?></p>
                 <footer class="blockquote-footer">
                   <?php echo $history['fecha'] ?>
-                  <a href="#" class="float-right">Ver completo</a>
+                  <a href="/historias/mostrar.php?id=<?php echo $history['historia_id'] ?>" class="float-right">Ver completo</a>
                 </footer>
               </blockquote>
             </div>
