@@ -8,7 +8,7 @@
         <div class="row">
           <div class="col-md-6 text-center">
             <br>
-            <h4>Av. Domingo Muñoz Chimalpain 92, Tadeo de Niza,
+            <h4 class="direccion">Av. Domingo Muñoz Chimalpain 92, Tadeo de Niza,
         43996 Cd Sahagún, Hgo.</h4>
         <br>
             <div class="row">

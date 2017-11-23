@@ -14,6 +14,12 @@ h2{
 }
 h4{
   font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 200;
+  color: #261C14;
+}
+.direccion{
+  font-family: 'Montserrat', sans-serif;
   font-size: 26px;
   font-weight: 200;
   color: #E3F2FD;
@@ -151,4 +157,18 @@ p{
   min-height: 50px;
   max-height: 200px;
   max-width: 100%;
+}
+.detalle-historia{
+  background: #E3F2FD;
+  padding: 1.5em;
+  border-radius: 10px 50px;
+  box-shadow: 2px 2px 5px #999;
+}
+
+
+.desc-tramite{
+  margin: 1em;
+  background: rgba(166, 147, 124, 0.4);
+  border-radius: 10px 50px;
+  box-shadow: 2px 2px 5px #999;
 }
