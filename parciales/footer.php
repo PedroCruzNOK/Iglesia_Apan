@@ -43,8 +43,6 @@
     <script src="/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/js/app.js" ></script>
     <!-- TiniyMCE como editor para los textarea -->
-    <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
     <!-- Definimos el selector a cambiar por el TinyMCE -->
-    <script>tinymce.init({ selector:'.edit-textarea' });</script>
   </body>
 </html>

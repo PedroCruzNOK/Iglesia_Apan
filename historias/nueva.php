@@ -1,5 +1,6 @@
 <?php $path = $_SERVER['DOCUMENT_ROOT']; ?>
 <?php include($path.'/parciales/header.php') ?>
+<?php include('../crud/histories_read.php') ?>
 
 <div class="container">
   <div class="row">

@@ -49,7 +49,7 @@
             </div>
             <div class="card-body">
               <blockquote class="blockquote mb-0">
-                <p><?php echo $history['contenido'] ?></p>
+                <p><?php echo substr((strip_tags($history['contenido'])), 0, 120).' ...'; ?></p>
                 <footer class="blockquote-footer">
                   <?php echo $history['fecha'] ?>
                   <a href="#" class="float-right">Ver completo</a>
@@ -61,7 +61,7 @@
               <div class="card-footer">
                 
                 <div class="btn-group float-right">
-                  <a href="#" class="btn btn-warning">Editar</a>
+                  <a href="/historias/editar.php?id=<?php echo $history['historia_id'] ?>"class="btn btn-warning">Editar</a>
                   <a href="#" class="btn btn-danger">Eliminar</a>
                 </div>
               </div>

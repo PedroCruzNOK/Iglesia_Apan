@@ -7,14 +7,19 @@
     die("La conexion falló: " . $conexion -> connect_error);
   }
 
-  $sql = "SELECT * FROM historias";
+  if( isset($_GET['id']) ){
+    $id = $_GET['id'];
+    $sql = "SELECT * FROM historias WHERE historia_id = $id";
+  }else{
+    $sql = "SELECT * FROM historias";
+  }
 
   $resultado = $conexion->query($sql);
   $historias = array();
 
   if ($resultado->num_rows > 0) {
     // echo "<h2>Hay ". $resultado->num_rows ." registros</h2>";
-    while ( $row = $resultado->fetch_assoc() ) {
+    while ( $row = $resultado->fetch_assoc() ){
       $historias[] = $row;
     }
   } else {
