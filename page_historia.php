@@ -25,10 +25,10 @@
   <?php } ?>
 
   <div class="container">
-    
+
     <?php if($admin) { ?>
       <div class="col col-sm-12 text-right">
-        <a href="/historias/nueva.php" class="btn btn-success"><strong>+</strong> Nueva Historia</a>
+        <a href="/historias/nueva.php" class="btn btn-success btn1"><strong>+</strong> Nueva Historia</a>
         <br><br>
       </div>
     <?php } ?>
@@ -59,7 +59,7 @@
 
             <?php if($admin){ ?>
               <div class="card-footer">
-                
+
                 <div class="btn-group float-right">
                   <a href="/historias/editar.php?id=<?php echo $history['historia_id'] ?>"class="btn btn-warning">Editar</a>
                   <a href="/crud/histories_delete.php?id=<?php echo $history['historia_id'] ?>" class="btn btn-danger">Eliminar</a>

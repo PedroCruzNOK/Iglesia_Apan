@@ -3,12 +3,13 @@
 <section class="servicioss">
   <br>
   <h2 class="text-center">TRAMITES Y SERVICIOS</h2>
+  <div class="col col-lg-12 text-center">
+    <h2>Conoce los <strong>tramites y servicios</strong> que puedes realizar en tu parroquia.</h2>
+    <h4> Envia tu reservación y nosotros nos pondremos en contacto contigo.</h4>
+  </div>
   <?php if($admin){ ?>
     <div class="row">
-      <div class="col col-lg-12 text-center">
-        <h2>Conoce los <strong>tramites y servicios</strong> que puedes realizar en tu parroquia.</h2>
-        <h4> Envia tu reservación y nosotros nos pondremos en contacto contigo.</h4>
-      </div>
+
       <div class="col-sm-12 text-center">
         <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#addServiceModal">
           <strong>+</strong> Agregar Servicio
