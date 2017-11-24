@@ -26,7 +26,7 @@
         <div class="row">
           <div class="col col-sm-12">
             <?php if($admin){?>
-              <div class="login-info align-middle">
+              <div class="login-info align-middle alerta-sesion">
                 <span class="align-middle">
                   <strong>Puedes amdinistrar!</strong> Recuerda salir de tu sesión antes de irte.
                 </span>

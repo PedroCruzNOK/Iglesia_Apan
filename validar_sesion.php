@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <?php include('parciales/header.php') ?>
-<?php 
+<?php
   $host    = "localhost";
   $usuario = "iglesia";
   $pass    = "aaaX4#efsW098_____!Asad43";
@@ -23,7 +23,7 @@
 
   if ($resultado->num_rows > 0) {
     $row = $resultado->fetch_array(MYSQLI_ASSOC);
-    // if (password_verify($password, $row['password'])) { 
+    // if (password_verify($password, $row['password'])) {
     if (md5($password) == $row['password']) {
       $_SESSION['loggedin'] = true;
       $_SESSION['user_id'] = $row['usuario_id'];
@@ -33,18 +33,18 @@
 
 ?>
       <div class="container">
-        <div class="row">
-          <div class="column col-sm-12 text-center">
+        <div class="row justify-content-center">
+          <div class="column col-sm-12 col-md-8 text-center login">
             <br><br>
             <h1>Bienvenido <strong><?php echo $_SESSION['username'] ?></strong></h1>
             <p>Tu sesión es: <?php echo session_id(); ?></p>
-            <a href="index.php" class="btn btn-primary btn-lg">Continuar</a>
+            <a href="index.php" class="btn btn-primary btn-lg btn1">Continuar</a>
           </div>
         </div>
       </div>
 <?php
     }
-    else{ 
+    else{
       echo "Username o Password estan incorrectos.";
       echo "<br><a href='login.php'>Volver a Intentarlo</a>";
     }

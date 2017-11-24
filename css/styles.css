@@ -18,6 +18,7 @@ h4{
   font-weight: 200;
   color: #261C14;
 }
+
 .direccion{
   font-family: 'Montserrat', sans-serif;
   font-size: 26px;
@@ -42,7 +43,7 @@ section.servicios{
 }
 
 .login-info {
-  background-color: #AEE6FA;
+  background-color: #A6937C;
   overflow: hidden;
   padding: .2em 1.5em;
 }
@@ -121,10 +122,11 @@ p{
 
 }
 .acerca{
-  background: #E3F2FD;
+  background: rgba(166, 147, 124, 0.8);
   padding: 1.5em;
-  border-radius: 1% 5%;
-  box-shadow: 2px 2px 5px #999;
+  border-radius: 10px 50px;
+  box-shadow: 2px 2px 5px #261C14;
+  border: solid 1px #261C14;
 }
 .about{
   background: #261C14;
@@ -175,4 +177,28 @@ p{
   background: rgba(166, 147, 124, 0.4);
   border-radius: 10px 50px;
   box-shadow: 2px 2px 5px #999;
+}
+.login{
+  background: rgba(166, 147, 124, 0.9);
+  margin-top: 2%;
+  padding: 1.5em;
+  border-radius: 10px 50px;
+  box-shadow: 2px 2px 5px #261C14;
+  border: 1px solid  #261C14;
+  color: #261C14;
+}
+.titulo-historia{
+  background: rgba(166, 147, 124, 0.8);
+}
+.imagen-historia{
+
+transition:all 0.5s ease-in-out;
+}
+.imagen-historia:hover {
+  filter:grayscale(80%);
+
+}
+.imagen-historia img:hover {
+
+  border: solid 2px #735645;
 }
