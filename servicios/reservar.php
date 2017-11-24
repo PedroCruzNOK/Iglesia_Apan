@@ -5,7 +5,7 @@
   <h2 class="text-center">Reservación de servicio</h2>
   <h3 class="text-center">Una vez que envies tus datos nosotros nos pondremos en contacto contigo, para confirmar la disponibilidad.</h3>
   <div class="row">
-    <div class="col">
+    <div class="col login">
 
       <form action="/crud/reservations_create.php" method="POST">
         <div class="row">

@@ -6,10 +6,10 @@
 
 <br><br>
 <h2 class="text-center">Reservacion de servicios</h2>
-<div class="container">
+<div class="container login">
   <div class="row">
-    <div class="col-lg-12">
-      
+    <div class="col-lg-12 ">
+
       <table class="table">
         <thead>
           <tr>
@@ -38,7 +38,7 @@
                 </div>
               </td>
             </tr>
-          <?php } ?>          
+          <?php } ?>
         </tbody>
       </table>
     </div>
