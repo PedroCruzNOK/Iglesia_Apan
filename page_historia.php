@@ -37,12 +37,12 @@
       <div class="row">
 
 
-        <div class="col-sm-4">
-          <img src="<?php if(empty($history['imagen_url'])){ echo 'images/captura2.JPG'; }else{ echo $history['imagen_url']; } ?> " alt="..." class="img-thumbnail">
+        <div class="col-sm-4 imagen-historia">
+          <img  src="<?php if(empty($history['imagen_url'])){ echo 'images/captura2.JPG'; }else{ echo $history['imagen_url']; } ?> " alt="..." class="img-thumbnail">
         </div>
         <div class="col-sm-8">
           <div class="card">
-            <div class="card-header">
+            <div class="card-header titulo-historia text-center">
               <strong>
                 <?php echo $history['titulo'] ?>
               </strong>

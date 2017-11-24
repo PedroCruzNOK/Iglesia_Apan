@@ -11,7 +11,7 @@
     <div class="row">
 
       <div class="col-sm-12 text-center">
-        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#addServiceModal">
+        <button type="button" class="btn btn-success btn-lg btn1" data-toggle="modal" data-target="#addServiceModal">
           <strong>+</strong> Agregar Servicio
         </button>
       </div>
