@@ -41,7 +41,7 @@
          <input type="text" name="r_servicio_id" hidden value="<?php echo $_GET['id'] ?>">
 
           <div class="col-lg-12 text-center">
-            <input type="submit" name="submit" value="Enviar Petición" class="btn btn-primary btn-lg text-center">
+            <input type="submit" name="submit" value="Enviar Petición" class="btn btn-primary btn-lg text-center btn1">
           </div>
         </div>
       </form>

@@ -202,3 +202,15 @@ transition:all 0.5s ease-in-out;
 
   border: solid 2px #735645;
 }
+.imagen-historia-detalle{
+  transition:all 0.7s ease-in-out;
+}
+.imagen-historia-detalle:hover{
+
+border-radius:60px;
+-webkit-border-radius:60px;
+box-shadow: 2px 1px 5px 5px #353734;
+-webkit-box-shadow: 2px 1px 5px 5px #353734;
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+}

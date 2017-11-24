@@ -45,7 +45,7 @@ $(document).ready(function(){
         // Agregamos el nuevo elemento a la vista para simular real-time
         card_structure = '\
           <div class="col col-lg-4 col-md-6 card-container">\
-            <div class="card" id="' + data.id + '">\
+            <div class="card desc-tramite" id="' + data.id + '">\
               <div class="card-body">\
                 <h4 class="card-title">' + data.name + '</h4>\
                 <h6 class="card-subtitle mb-2 text-muted">$' + data.cost + '</h6>\
@@ -94,7 +94,7 @@ $(document).ready(function(){
         "id":     servicio_id,
         "nombre": nombre,
         "descripcion": descripcion,
-        "costo": costo 
+        "costo": costo
       },
       success: function(data){
         if(!data.error){

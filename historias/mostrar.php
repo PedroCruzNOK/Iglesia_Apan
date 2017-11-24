@@ -12,8 +12,8 @@
     <div class="col-lg-8">
       <?php echo $historias[0]['contenido'] ?>
     </div>
-    <div class="col col-lg-4 text-center">
-      <img src="<?php echo $historias[0]['imagen_url'] ?>" style="height: auto; width:100%;">
+    <div class="col col-lg-4 text-center ">
+      <img class="imagen-historia-detalle" src="<?php echo $historias[0]['imagen_url'] ?>" style="height: auto; width:100%;">
     </div>
 
 
