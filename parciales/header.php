@@ -31,6 +31,7 @@
                   <strong>Puedes amdinistrar!</strong> Recuerda salir de tu sesión antes de irte.
                 </span>
                 <div class="btn-group float-right" role="group" aria-label="Basic example">
+                  <a href="/reservaciones_adm.php" class="btn btn-sm btn-secondary">Reservaciones</a>
                   <a href="/usuarios/" class="btn btn-sm btn-secondary">Usuarios</a>
                   <a href="/logout.php" class="btn btn-info btn-sm">Cerrar Sesión</a>
                 </div>
