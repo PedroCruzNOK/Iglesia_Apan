@@ -32,8 +32,8 @@
           <div class="card-body">
             <h4 class="card-title"><?php echo $value['nombre']; ?></h4>
             <h6 class="card-subtitle mb-2 text-muted">$<?php echo $value['costo']; ?></h6>
-            <p class="card-text"><?php echo $value['descripcion']; ?></p>
-            <a href="#" class="card-link">Mas información</a>
+            <p class="card-text"><?php echo substr((strip_tags($value['descripcion'])), 0, 120).' ...' ?></p>
+            <a href="#" data-toggle="modal" data-target="#viewServiceModal" class="service-moreinfo">Mas información</a>
             <?php if($admin){ ?>
               <div class="btn-group float-right" role="group" aria-label="Basic example">
                 <button data-toggle="modal" data-target="#editServiceModal" class="card-link btn btn-warning edit_service_button"><strong>x</strong> Editar</button>
@@ -133,6 +133,38 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary" id="update_service_button">Actualizar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL PARA VER LOS SERVICIOS -->
+<div class="modal fade" id="viewServiceModal" tabindex="-1" role="dialog" aria-labelledby="viewServiceModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Titulo del Servicio</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div class="row">
+          <!-- <div class="col-sm-12">
+            <h2>Servicio</h2>
+          </div> -->
+          <div class="col-sm-12 description">
+            Descripción del servicio.
+          </div>
+          <!-- <div class="col-sm-12">
+            $000
+          </div> -->
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        Cuota de recuperación: $000
       </div>
     </div>
   </div>
