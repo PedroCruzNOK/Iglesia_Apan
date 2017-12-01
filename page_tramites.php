@@ -40,7 +40,7 @@
                 <button class="card-link btn btn-danger delete_service_button"><strong>x</strong> Eliminiar</button>
               </div>
             <?php } ?>
-            <a href="/servicios/reservar.php?id=<?php echo $value['servicio_id'] ?>" class="card-link btn btn-primary float-right btn1">Reservar</a>
+            <a href="/servicios/reservar.php?id=<?php echo $value['servicio_id'] ?>&service_name=<?php echo $value['nombre'] ?>" class="card-link btn btn-primary float-right btn1">Reservar</a>
           </div>
         </div>
       </div>

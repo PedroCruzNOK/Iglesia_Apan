@@ -19,6 +19,7 @@
               reservaciones.telefono,
               reservaciones.email,
               reservaciones.fecha,
+              reservaciones.hora,
               reservaciones.atendida
               FROM reservaciones INNER JOIN servicios ON reservaciones.servicio_id = servicios.servicio_id";
   }
