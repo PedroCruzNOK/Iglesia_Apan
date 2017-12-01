@@ -18,8 +18,7 @@ $(document).ready(function(){
   // Inicializacion para el datepicker e jquery-ui
   $('.datepicker').datepicker();
 
-
-
+  // Agregar un servicio con AJAX
   $('#add_service_button').click(function(){
 
     var servicio = $('#servicio').val();
@@ -66,25 +65,59 @@ $(document).ready(function(){
     });
   });
 
+  // Mostrar información de servicio con AJAX
+  $('.service-moreinfo').click(function(event){
+    event.preventDefault();
+    var id = $(this).closest('.card').attr('id');
+
+    $.ajax({
+      type: 'POST',
+      url: 'crud/services_read.php',
+      data: {
+        "id": id
+      },
+      success: function(data){
+        $('#viewServiceModal h2').text(data.title);
+        $('#viewServiceModal .description').html(data.content);
+        $('#viewServiceModal .modal-footer').text("Cuota de recuperación: $" + data.cost);
+      }
+    });
+  });
+
+  // Editar un servicio por AJAX
+  // Ya que es con modales y solo se muestra un resumen del contenido
+  //   debemo sde traer el contenido completo por ajax
   $('.edit_service_button').click(function(){
+
     var id = $(this).closest('.card').attr('id');
     var nombre = $(this).closest('.card').find('.card-title').text();
     var costo = $(this).closest('.card').find('.card-subtitle').text();
-    var descripcion = $(this).closest('.card').find('.card-text').text();
+    var contenido
 
-    console.log(costo.replace('$', ''));
+    $.ajax({
+      type: 'POST',
+      url: 'crud/services_read.php',
+      data: {
+        "id": id
+      },
+      success: function(data){
 
-    $('#eSeId').val(id);
-    $('#eSeNombre').val(nombre);
-    $('#eSeDescripcion').val(descripcion);
-    $('#eSeCosto').val(costo.replace('$', ''));
+        $('#eSeId').val(id);
+        $('#eSeNombre').val(nombre);
+        // $('#eSeDescripcion').val(descripcion);
+        // Cambiamos el contenido en TinyMCE
+        tinymce.get('eSeDescripcion').setContent(data.content);
+        $('#eSeCosto').val(costo.replace('$', ''));
+      }
+    })
   });
 
   $('#update_service_button').click(function(){
     var servicio_id = $('#eSeId').val();
     var card = $('#' + servicio_id).parent();
     var nombre = $('#eSeNombre').val();
-    var descripcion = $('#eSeDescripcion').val();
+    // var descripcion = $('#eSeDescripcion').val();
+    var descripcion = tinymce.get('eSeDescripcion').getContent();
     var costo = $('#eSeCosto').val();
 
     $.ajax({
@@ -105,7 +138,7 @@ $(document).ready(function(){
         console.log($(card))
         card.find('.card-title').text(nombre);
         card.find('.card-subtitle').text("$" + costo);
-        card.find('.card-text').text(descripcion);
+        card.find('.card-text').text(($(descripcion).text()).substring(0, 120) + ' ...');
       }
     });
   });
