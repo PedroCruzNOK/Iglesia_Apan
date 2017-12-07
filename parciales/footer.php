@@ -42,6 +42,7 @@
 
 
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
     <script src="/js/datepicker-es.js"></script>
     <script src="/js/jquery-ui.min.js"></script>
