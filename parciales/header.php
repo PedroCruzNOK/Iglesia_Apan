@@ -37,7 +37,7 @@
                 </div>
               </div>
             <?php }else{ ?>
-              <a href="login.php" class="btn btn-outline-secondary btn-sm float-right btn1">Ingresar</a>
+              <a href="/login.php" class="btn btn-outline-secondary btn-sm float-right btn1">Ingresar</a>
             <?php } ?>
           </div>
           <div class="col-sm-12 col-md-12 conteTitulo">

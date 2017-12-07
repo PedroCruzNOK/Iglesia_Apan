@@ -20,6 +20,39 @@ Hasta el presente nuestra iglesia a evolucionado de una forma positiva en medio 
       </div>
     </div>
 
+    <div class="row galeria">
+      <div class="col-md-12">
+        <h3>Galeria</h3>
+      </div>
+      <div class="col-md-4">
+        <img src="images/captura3.JPG" alt="..." class="img-thumbnail">
+      </div>
+      <div class="col-md-4">
+        <img src="images/captura3.JPG" alt="..." class="img-thumbnail">
+      </div>
+      <div class="col-md-4">
+        <img src="images/captura3.JPG" alt="..." class="img-thumbnail">
+      </div>
+      <div class="col-md-4">
+        <img src="images/captura3.JPG" alt="..." class="img-thumbnail">
+      </div>
+      <div class="col-md-4">
+        <img src="images/captura3.JPG" alt="..." class="img-thumbnail">
+      </div>
+      <div class="col-md-4">
+        <img src="images/captura3.JPG" alt="..." class="img-thumbnail">
+      </div>
+      <div class="col-md-4">
+        <img src="images/captura3.JPG" alt="..." class="img-thumbnail">
+      </div>
+      <div class="col-md-4">
+        <img src="images/captura3.JPG" alt="..." class="img-thumbnail">
+      </div>
+      <div class="col-md-4">
+        <img src="images/captura3.JPG" alt="..." class="img-thumbnail">
+      </div>
+    </div>
+
 
 
 
